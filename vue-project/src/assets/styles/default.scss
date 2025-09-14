@@ -1,0 +1,39 @@
+@use '@/assets/styles/variables' as *;
+
+*
+{
+	font-family: $font-primary;
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+ul
+{
+	list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}
+.container
+{
+	max-width: 1332px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 16px;
+}
+.container-flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header
+{
+	margin-bottom: 50px;
+}
+footer
+{
+	margin-top: 50px;
+}
