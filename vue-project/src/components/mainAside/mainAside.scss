@@ -1,6 +1,66 @@
+@import '@/assets/styles/_variables.scss';
+
+
 .aside__dashboard
 {
     background-color: #29221D;
-    max-width: 127px;
-    padding: 20px 7.58px;
+    max-width: 285px;
+    padding: 30px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    height: 100%;
+
+}
+.aside__titles
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    &-image
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    &-title
+    {
+        font-weight: 400;
+        font-size: 24px;
+        color: #fff;
+    }
+}
+.aside__list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &-wrapper
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 20px;
+        padding-right: 56px;
+        transition: .3s;
+
+        &:hover
+        {
+            transition: .3s;
+            @include g-btn;
+        }
+    }
+
+    &-icon
+    {
+        width: 30px;
+        height: 30px;
+    }
 }
