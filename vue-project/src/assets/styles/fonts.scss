@@ -1,1 +1,25 @@
 /* Fonts ! */
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('@/assets/fonts/Baijamjuree/Baijamjuree-Bold/BaiJamjuree-Bold.eot');
+    src: url('@/assets/fonts/Baijamjuree/Baijamjuree-Bold/BaiJamjuree-Bold.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Bold/BaiJamjuree-Bold.woff2') format('woff2'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Bold/BaiJamjuree-Bold.woff') format('woff'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Bold/BaiJamjuree-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('@/assets/fonts/Baijamjuree/Baijamjuree-Regular/BaiJamjuree-Regular.eot');
+    src: url('@/assets/fonts/Baijamjuree/Baijamjuree-Regular/BaiJamjuree-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Regular/BaiJamjuree-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Regular/BaiJamjuree-Regular.woff') format('woff'),
+        url('@/assets/fonts/Baijamjuree/Baijamjuree-Regular/BaiJamjuree-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

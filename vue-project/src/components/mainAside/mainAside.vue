@@ -1,7 +1,7 @@
 <template>
     <section class="mainAside">
         <div class="container">
-            <aside>
+            <aside class="aside__dashboard">
                 <h2>Title</h2>
             </aside>
         </div>
