@@ -1,12 +1,12 @@
 <template>
-    <mainAside />
+  <!-- header -->
 
     <main>
       <slot></slot>
     </main>
     
+    <!-- footer -->
 </template>
 <script setup lang="ts">
-  import mainAside from "@/components/mainAside/mainAside.vue";
 
 </script>

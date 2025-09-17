@@ -1,15 +1,16 @@
 $font-primary: 'Bai Jamjuree', sans-serif;
 
-.g-btn
+@mixin g-btn
 {
-    padding: 7.11px 11.37px;
+    padding: 10px 20px;
+    padding-right: 56px;
     background-color: #fe6c00;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .g-texts
 {
     font-weight: 400;
-    font-size: 7px;
+    font-size: 16px;
     color: #fff;
 }
 .g-texts-mainSection
