@@ -9,6 +9,7 @@ import SavingsView from "@/views/SavingsView/SavingsView.vue"
 import AdviceView from "@/views/AdviceView/AdviceView.vue"
 import AccountView from "@/views/AccountView/AccountView.vue"
 import SettingsView from "@/views/SettingsView/SettingsView.vue"
+import NotificationsView from "@/views/NotificationsView/NotificationsView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +64,11 @@ const router = createRouter({
       name: 'Settings',
       path: '/settings',
       component: SettingsView,
+    },
+    {
+      name: 'Notifications',
+      path: '/notifications',
+      component: NotificationsView,
     },
     
   ],

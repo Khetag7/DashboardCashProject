@@ -42,6 +42,12 @@
     flex-direction: column;
     gap: 35px;
 
+    &-el
+    {
+        white-space: nowrap; 
+        display: inline-block; 
+    }
+
     &-wrapper
     {
         display: flex;
