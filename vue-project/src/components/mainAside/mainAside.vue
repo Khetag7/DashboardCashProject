@@ -8,26 +8,32 @@
             <nav>
                 <ul class="aside__list">
                     <li v-for="item in items" :key="item.id">
-                        <router-link :to="item.path" class="aside__list-wrapper">
-                            <img :src="item.icon" :alt="item.name + ' icon'" class="aside__list-icon">
-                            <span class="aside__list-el g-texts">
-                                {{ item.name }}
-                            </span>
-                        </router-link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
+                        <router-link 
+                        :to="item.path" 
+                        class="aside__list-wrapper"
+                        :class="{ 'active-link': $route.path === item.path }"
+                        >
+                        <img :src="item.icon" :alt="item.name + ' icon'" class="aside__list-icon">
+                        <span class="aside__list-el g-texts">
+                            {{ item.name }}
+                        </span>
+                    </router-link>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 import { computed } from "vue";
+import { useRoute } from 'vue-router'; 
 import { useAsideStore } from '@/stores/asideStore'
 
 const store = useAsideStore()
 const items = computed(()=>store.items)
+const route = useRoute() 
 
 const PeoplesNames = ref('Soibi-Bobo')
 </script>

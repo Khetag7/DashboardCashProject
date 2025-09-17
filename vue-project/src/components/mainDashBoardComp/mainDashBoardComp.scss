@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: minmax(200px, auto);
     grid-gap: 15px;
 }
 .mainDashBoard-grid-blocs
@@ -11,16 +11,438 @@
     border-radius: 20px;
     padding: 20px;
 }
+.mainDashBoard-grid-blocs-transactions
+{
+    background: #29221d;
+    border-radius: 20px;
+    padding: 20px;
+    height: 277px;
+}
+.mainDashBoard-grid-blocs-report
+{
+    background: #29221d;
+    border-radius: 20px;
+    padding: 20px;
+    height: 277px;
+}
+.mainDashBoard-grid-blocs-savings
+{
+    background: #29221d;
+    border-radius: 20px;
+    padding: 20px;
+    height: 217px;
+}
+.mainDashBoard-grid-blocs-advice
+{
+    background: #29221d;
+    border-radius: 20px;
+    padding: 20px;
+    height: 181px;
+}
 .mainDashBoard-grid-block-titles
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-bottom: 20px;
+    
     &-svg
     {
         width: 20px;
         height: 20px;
-
+        
     }
+}
+.mainDashBoard-grid-block-bottom-cards
+{
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(162deg, rgba(59, 43, 30, 0.37) 47%, #fea767 125%), linear-gradient(146deg, rgba(66, 59, 55, 0.6) 0%, rgba(66, 59, 55, 0.6) 100%);
+}
+.mainDashBoard__block-bottom-title
+{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.mainDashBoard__block-bottom-price
+{
+    font-weight: 700;
+    font-size: 23px;
+    color: #c7c4c6;
+    margin-bottom: 25px;
+}
+.mainDashBoard__block-bottom-info
+{
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #8a8587;
+    margin-bottom: -10px;
+}
+.mainDashBoard__block-bottom-vectors
+{
+    display: inline-block;
+    font-size: 35px;
+    color: #8a8587;;
+}
+.mainDashBoard__block-bottom-dataInfo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainDashBoard__block-dataInfo-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #8a8587;
+    
+    & span
+    {
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+.mainDashBoard__card-img
+{
+    width: 65px;
+    height: 40px;
+}
+.mainDashBoard-block-bottom-advice-text
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;  
+    color: #8a8587;
+}
+.mainDashBoard-grid-block-bottom-loans
+{
+    position: relative;
+}
+.mainDashBoard-block-bottom-loans-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    & span
+    {
+        font-weight: 700;
+        font-size: 16px;
+        color: #bdbabb;
+    }
+}
+.mainDashBoard-block-bottom-loans-img-block
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    
+    & p
+    {
+        font-weight: 400;
+        font-size: 17px;
+        color: #bdbabb;
+    }
+}
+.mainDashBoard-block-bottom-loans-infoes
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 7px;
+    margin-bottom: 15px;
+    
+    & p 
+    {
+        background: #37302b;
+        padding: 7px;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #8a8587;
+    }
+}
+.mainDashBoard-block-bottom-loans-line
+{
+    display: flex;
+    align-items: center;
+    width: 295px;
+    background: #473b33;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+}
+.mainDashBoard-grid-block-bottom-savings
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.mainDashBoard-block-bottom-savings-svgs
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    p
+    {
+        font-weight: 400;
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        top: 23px;
+        left: 19px;
+    }
+}
+.block-bottom-savings-svg-wrapp
+{
+    position: absolute;
+    left: 31px;
+}
+.mainDashBoard-block-bottom-savings-texts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainDashBoard-savings-p
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #bdbabb;
+    margin-bottom: 5px;
+}
+.mainDashBoard-savings-span
+{
+    font-weight: 700;
+    font-size: 18px;
+    color: #bdbabb;
+}
+.mainDashBoard-grid-block-bottom-subsc
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.mainDashBoard-block-bottom-subsc-img
+{
+    width: 35px;
+}
+.mainDashBoard-block-bottom-subsc-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    & span
+    {
+        font-weight: 700;
+        font-size: 17px;
+        text-align: right;
+        color: #bdbabb;
+    }
+}
+.mainDashBoard-block-child-subsc-wrapper
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    & p 
+    {
+        font-weight: 400;
+        font-size: 17px;
+        color: #bdbabb;
+        
+        & span
+        {
+            font-weight: 400;
+            font-size: 14px;
+            color: #8a8587;
+        }
+    }
+}
+.mainDashBoard-grid-block-bottom-budget-titles
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+    & p 
+    {
+        font-weight: 700;
+        font-size: 18px;
+        color: #bdbabb;
+    }
+    
+    & span
+    {
+        font-weight: 700;
+        font-size: 22px;
+        color: #bdbabb;
+    }
+}
+.mainDashBoard-block-budget
+{
+    background: #302924;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.mainDashBoard-budget-svg
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    & img
+    {
+        width: 25px;
+    }
+    
+}
+.mainDashBoard-block-budget-wrapp-text-low
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #bdbabb;
+}
+.mainDashBoard-block-budget-wrapp
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &-text 
+    {
+        font-weight: 700;
+        font-size: 16px;
+        color: #bdbabb;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        
+        & span
+        {
+            font-weight: 400;
+            font-size: 14px;
+            color: #8a8587;
+        }
+    }
+    
+}
+.mainDashBoard-block-budget-price
+{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #bdbabb;
+}
+.mainDashBoard-grid-block-bottom-report
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.mainDashBoard__report-bottom-blocks
+{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.mainDashBoard__report-bottom-blocks-svgs
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    
+    & p 
+    {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+}
+.mainDashBoard__report-right-texts
+{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mainDashBoard-block-transactions-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainDashBoard-block-transactions-titles
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    & p 
+    {
+        font-weight: 700;
+        font-size: 16px;
+        color: #bdbabb;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        
+        & span
+        {
+            font-weight: 400;
+            font-size: 14px;
+            color: #8a8587;
+        }
+    }
+}
+.mainDashBoard-block-transactions-price
+{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #fe1e00;
+}
+.mainDashBoard-block-transactions-price-last
+{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #00fe93;
+}
+.mainDashBoard-grid-block-bottom-transactions
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.mainDashBoard-grid-wrappers
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

@@ -13,7 +13,7 @@
     justify-content: start;
     flex-direction: column;
     height: 100%;
-
+    
 }
 .aside__titles
 {
@@ -21,14 +21,14 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 35px;
-
+    
     &-image
     {
         width: 60px;
         height: 60px;
         border-radius: 100%;
     }
-
+    
     &-title
     {
         font-weight: 400;
@@ -41,13 +41,13 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
-
+    
     &-el
     {
         white-space: nowrap; 
         display: inline-block; 
     }
-
+    
     &-wrapper
     {
         display: flex;
@@ -56,14 +56,27 @@
         padding: 0px 20px;
         padding-right: 56px;
         transition: .3s;
-
+        
+        &.active-link {
+            background-color: #fe6c00;
+            color: white;
+            padding: 10px 20px;
+            padding-right: 56px;
+            border-radius: 10px;
+            
+            
+            .aside__list-el {
+                color: white;
+            }
+        }
+        
         &:hover
         {
             transition: .3s;
             @include g-btn;
         }
     }
-
+    
     &-icon
     {
         width: 30px;
