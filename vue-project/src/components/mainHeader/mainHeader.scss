@@ -1,0 +1,48 @@
+.dashboard__header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+    
+    &-title
+    {
+        font-weight: 700;
+        font-size: 25px;
+        color: #fff;
+    }
+}
+.dashboard__header-block
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 30px;
+
+    &-search
+    {
+        width: 25px;
+        cursor: pointer;
+    }
+
+    &-notifi
+    {
+        width: 25px;
+
+    }
+}
+.dashboard__header-block-link
+{
+    position: relative;
+}
+.header__ellipse-orange
+{
+    border-radius: 100%;
+    background-color: #fe6c00;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+}
