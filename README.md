@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Dashboard Preview](./PreviewDashBoard.png)
+![Dashboard Preview](<img width="1352" height="791" alt="image" src="https://github.com/user-attachments/assets/4d5c77e6-2a53-4a20-9673-585b12b62247" />)
 
 *A modern financial management dashboard for tracking your money flow*
 
