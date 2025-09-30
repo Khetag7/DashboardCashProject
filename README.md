@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Dashboard Preview](Снимок%20экрана%202025-09-30%20152330.png)
+![Dashboard Preview](./PreviewDashBoard.png)
 
 *A modern financial management dashboard for tracking your money flow*
 
